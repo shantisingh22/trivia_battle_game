@@ -8,12 +8,23 @@
         <div class="container-box1">
             <h1 class="title">Two-Player Trivia Game</h1>
             <div class="form-boxcontainer">
-                <h2 class="title1">Enter Two Players' Names</h2>
-                <form>
-                    <input class="inputtag" type="text" id="1stplayer1-name" placeholder="Enter Player 1 Name"><br><br>
-                    <input type="text" id="2ndplayer2-name" placeholder="Enter Player 2 Name"><br><br>
-                    <button id="SubmitButton" type="button">Submit</button>
-                </form>
+                <div class="player-names-section"id="player-names-section">
+                    <h2 class="title1">Enter Two Players' Names</h2>
+                    <form id="nameForm">
+                        <div class="player-input">
+                            <label for="1stplayer1-name">Player 1 Name:</label>
+                            <input class="inputtag" type="text" id="1stplayer1-name" placeholder="Enter Player 1 Name">
+                        </div>
+                        <br>
+                        <div class="player-input">
+                            <label for="2ndplayer2-name">Player 2 Name:</label>
+                            <input type="text" id="2ndplayer2-name" placeholder="Enter Player 2 Name">
+                        </div>
+                        <br>
+                        <button id="SubmitButton" type="button">Submit</button>
+                    </form>
+                </div>
+
 
                 <h1 id="welcometrivia" class="hidden"></h1>
                 <h2 id="textArea" class="hidden example">Player 1</h2>
@@ -63,5 +74,3 @@
     </div>
     <script src="script.js"></script>
 </body>
-
-
